@@ -1,0 +1,5 @@
+BACKUP DATABASE DB_AI
+TO DISK = N'./DB_AI.bak'
+GO
+
+

@@ -1,0 +1,5 @@
+USE AIDC_AI;
+DROP TABLE [Products]
+GO
+
+

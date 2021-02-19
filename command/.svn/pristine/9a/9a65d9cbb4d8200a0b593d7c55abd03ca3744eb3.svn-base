@@ -1,0 +1,191 @@
+USE DB_AI;
+GO
+
+/****** Object:  Table [dbo].[courseScript]    Script Date: 2021/2/3 上午 06:46:12 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+/****** ******/
+DROP TABLE RECORD;
+
+CREATE TABLE [dbo].[RECORD](
+	[id] [int] IDENTITY(1,1) NOT NULL, /**/
+	[FILE_PATH] [nvarchar](50) NULL,
+	[TEST_ID] [int] NULL,
+	[STATION] [int] NULL,
+	[TYPE] [int] NULL,
+	[Event_1]	[float]	NULL,
+	[Event_2]	[float]	NULL,
+	[Event_3]	[float]	NULL,
+	[Event_4]	[float]	NULL,
+	[Event_5]	[float]	NULL,
+	[Event_6]	[float]	NULL,
+	[Event_7]	[float]	NULL,
+	[Event_8]	[float]	NULL,
+	[Event_9] [float]	NULL,
+	[Event_10]	[float]	NULL,
+	[Event_11]	[float]	NULL,
+	[Event_12]	[float]	NULL,
+	[Event_13]	[float]	NULL,
+	[Event_14]	[float]	NULL,
+	[Event_15]	[float]	NULL,
+	[Event_16]	[float]	NULL,
+	[Event_17]	[float]	NULL,
+	[Event_18]	[float]	NULL,
+	[Event_19]	[float]	NULL,
+	[Event_20]	[float]	NULL,
+	[Event_21]	[float]	NULL,
+	[Event_22]	[float]	NULL,
+	[Event_23]	[float]	NULL,
+	[Event_24]	[float]	NULL,
+	[Event_25]	[float]	NULL,
+	[Event_26]	[float]	NULL,
+	[Event_27]	[float]	NULL,
+	[Event_28]	[float]	NULL,
+	[Event_29]	[float]	NULL,
+	[Event_30]	[float]	NULL,
+	[Event_31]	[float]	NULL,
+	[Event_32]	[float]	NULL,
+	[Event_33]	[float]	NULL,
+	[Event_34]	[float]	NULL,
+	[Event_35]	[float]	NULL,
+	[Event_36]	[float]	NULL,
+	[Event_37]	[float]	NULL,
+	[Event_38]	[float]	NULL,
+	[Event_39]	[float]	NULL,
+	[Event_40]	[float]	NULL,
+	[Event_41]	[float]	NULL,
+	[Event_42]	[float]	NULL,
+	[Event_43]	[float]	NULL,
+	[Event_44]	[float]	NULL,
+	[Event_45]	[float]	NULL,
+	[TEST_SCORE_10]	[float]	NULL,
+	[datetime] [datetime] NULL
+)
+GO
+
+/****** ******/
+DROP TABLE MEMBER;
+
+CREATE TABLE [dbo].[MEMBER](
+	[id] [int] IDENTITY(1,1) NOT NULL, /**/
+	[TEST_ID] [int] NULL,
+	[TYPE] [int] NULL,
+	[STATION] [int] NULL,
+	[COUNT] [int] NULL,
+	[ABILITY_1]	[float]	NULL,	
+	[ABILITY_2]	[float]	NULL,	
+	[ABILITY_3]	[float]	NULL,	
+	[ABILITY_4]	[float]	NULL,	
+	[ABILITY_5]	[float]	NULL,	
+	[ABILITY_6]	[float]	NULL,	
+	[ABILITY_7]	[float]	NULL,	
+	[ABILITY_8]	[float]	NULL,	
+	[ABILITY_9]	[float]	NULL,	
+	[ABILITY_10] [float]	NULL,
+	[TOTAL_SCORE] [float] NULL,
+	[COURSE_LINK] [int](50) NULL,
+	[datetime] [datetime] NULL
+)
+GO
+
+/****** ******/
+DROP TABLE STATION;
+
+CREATE TABLE [dbo].[STATION](
+	[id] [int] IDENTITY(1,1) NOT NULL, /**/
+	[STATION] [] NULL,
+	[TYPE] [int] NULL,
+	[COUNT] [int] NULL,
+	[TYPE_2] [int] NULL,
+	[Event_1]	[float]	NULL,
+	[Event_2]	[float]	NULL,
+	[Event_3]	[float]	NULL,
+	[Event_4]	[float]	NULL,
+	[Event_5]	[float]	NULL,
+	[Event_6]	[float]	NULL,
+	[Event_7]	[float]	NULL,
+	[Event_8]	[float]	NULL,
+	[Event_9]	[float]	NULL,
+	[Event_10]	[float]	NULL,
+	[Event_11]	[float]	NULL,
+	[Event_12]	[float]	NULL,
+	[Event_13]	[float]	NULL,
+	[Event_14]	[float]	NULL,
+	[Event_15]	[float]	NULL,
+	[Event_16]	[float]	NULL,
+	[Event_17]	[float]	NULL,
+	[Event_18]	[float]	NULL,
+	[Event_19]	[float]	NULL,
+	[Event_20]	[float]	NULL,
+	[Event_21]	[float]	NULL,
+	[Event_22]	[float]	NULL,
+	[Event_23]	[float]	NULL,
+	[Event_24]	[float]	NULL,
+	[Event_25]	[float]	NULL,
+	[Event_26]	[float]	NULL,
+	[Event_27]	[float]	NULL,
+	[Event_28]	[float]	NULL,
+	[Event_29]	[float]	NULL,
+	[Event_30]	[float]	NULL,
+	[Event_31]	[float]	NULL,
+	[Event_32]	[float]	NULL,
+	[Event_33]	[float]	NULL,
+	[Event_34]	[float]	NULL,
+	[Event_35]	[float]	NULL,
+	[Event_36]	[float]	NULL,
+	[Event_37]	[float]	NULL,
+	[Event_38]	[float]	NULL,
+	[Event_39]	[float]	NULL,
+	[Event_40]	[float]	NULL,
+	[Event_41]	[float]	NULL,
+	[Event_42]	[float]	NULL,
+	[Event_43]	[float]	NULL,
+	[Event_44]	[float]	NULL,
+	[Event_45]	[float]	NULL,
+	[AVG_SCORE_1]	[float]	NULL,
+	[AVG_SCORE_2]	[float]	NULL,
+	[AVG_SCORE_3]	[float]	NULL,
+	[AVG_SCORE_4]	[float]	NULL,
+	[AVG_SCORE_5]	[float]	NULL,
+	[DIFICULTY]	[float]	NULL,
+	[datetime] [datetime] NULL
+)
+GO
+
+/****** ******/
+DROP TABLE COURSE;
+
+CREATE TABLE [dbo].[COURSE](
+	[id] [int] IDENTITY(1,1) NOT NULL, /**/
+	[EVENT] [int] NULL, /*  ENGINE_STOP = 1 */
+	[CLASS_ABILITY] [float] NULL,
+	[COURSE_TITLE] [int] NULL,
+	[WEIGHT_TIME] [float] NULL,
+	[WEIGHT_COUNT] [float] NULL,
+	[WIGHT_IMPORTANT_1] [float] NULL,
+	[WIGHT_IMPORTANT_2] [float] NULL,
+	[WIGHT_IMPORTANT_3] [float] NULL,
+	[EVELUATE] [float] NULL,
+	[datetime] [datetime] NULL
+)
+GO
+
+/****** ******/
+DROP TABLE VOICE;
+
+CREATE TABLE [dbo].[VOICE](
+	[id] [int] IDENTITY(1,1) NOT NULL, /**/
+	[TYPE] [int] NULL,
+	[COMMEND] [nvarchar](50) NULL,
+	[RESPOND] [nvarchar](50) NULL,
+	[datetime] [datetime] NULL,
+)
+GO
+
+
+
+

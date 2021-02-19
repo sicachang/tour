@@ -1,0 +1,8 @@
+訊息 3634, 層級 16, 狀態 1, 伺服器 sicachang-Aspire-One-753, 行 1
+The operating system returned the error '5(Access is denied.)' while attempting 'RestoreContainer::ValidateTargetForCreation' on '/var/opt/mssql/data/AIDC_AI.mdf'.
+訊息 3156, 層級 16, 狀態 8, 伺服器 sicachang-Aspire-One-753, 行 1
+File 'AIDC_AI' cannot be restored to '/var/opt/mssql/data/AIDC_AI.mdf'. Use WITH MOVE to identify a valid location for the file.
+訊息 3119, 層級 16, 狀態 1, 伺服器 sicachang-Aspire-One-753, 行 1
+Problems were identified while planning for the RESTORE statement. Previous messages provide details.
+訊息 3013, 層級 16, 狀態 1, 伺服器 sicachang-Aspire-One-753, 行 1
+RESTORE DATABASE is terminating abnormally.

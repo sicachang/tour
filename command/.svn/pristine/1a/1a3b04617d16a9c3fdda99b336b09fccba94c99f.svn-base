@@ -1,0 +1,3 @@
+Processed 344 pages for database 'AIDC_AI', file 'AIDC_AI' on file 1.
+Processed 2 pages for database 'AIDC_AI', file 'AIDC_AI_log' on file 1.
+RESTORE DATABASE successfully processed 346 pages in 0.590 seconds (4.574 MB/sec).

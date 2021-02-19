@@ -1,0 +1,9 @@
+Name
+----
+master
+tempdb
+model
+msdb
+DB_AI
+
+(5 個受影響的資料列)

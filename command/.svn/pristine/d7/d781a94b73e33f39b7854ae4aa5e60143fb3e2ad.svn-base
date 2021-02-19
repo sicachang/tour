@@ -1,0 +1,5 @@
+BACKUP DATABASE AIDC_AI
+TO DISK = './AIDC_AI.bak'
+GO
+
+

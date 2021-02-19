@@ -1,0 +1,9 @@
+Changed database context to 'AIDC_AI'.
+TABLE_CATALOG TABLE_SCHEMA TABLE_NAME COLUMN_NAME ORDINAL_POSITION COLUMN_DEFAULT IS_NULLABLE DATA_TYPE CHARACTER_MAXIMUM_LENGTH CHARACTER_OCTET_LENGTH NUMERIC_PRECISION NUMERIC_PRECISION_RADIX NUMERIC_SCALE DATETIME_PRECISION CHARACTER_SET_CATALOG CHARACTER_SET_SCHEMA CHARACTER_SET_NAME COLLATION_CATALOG COLLATION_SCHEMA COLLATION_NAME DOMAIN_CATALOG DOMAIN_SCHEMA DOMAIN_NAME
+------------- ------------ ---------- ----------- ---------------- -------------- ----------- --------- ------------------------ ---------------------- ----------------- ----------------------- ------------- ------------------ --------------------- -------------------- ------------------ ----------------- ---------------- -------------- -------------- ------------- -----------
+AIDC_AI dbo Products ProductID 1 NULL NO int NULL NULL 10 10 0 NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL
+AIDC_AI dbo Products ProductName 2 NULL NO varchar 25 25 NULL NULL NULL NULL NULL NULL iso_1 NULL NULL SQL_Latin1_General_CP1_CI_AS NULL NULL NULL
+AIDC_AI dbo Products Price 3 NULL YES money NULL NULL 19 10 4 NULL NULL NULL NULL NULL NULL NULL NULL NULL NULL
+AIDC_AI dbo Products ProductDescription 4 NULL YES varchar -1 -1 NULL NULL NULL NULL NULL NULL iso_1 NULL NULL SQL_Latin1_General_CP1_CI_AS NULL NULL NULL
+
+(4 個受影響的資料列)
